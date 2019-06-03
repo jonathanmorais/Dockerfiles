@@ -1,9 +1,11 @@
-FROM python:3.7.3-alpine
+FROM python:3.6
+
+EXPOSE 5000
 
 WORKDIR /app
 
 COPY . .
 
-RUN pip install -r requirements.txt && pip install pika --upgrade
+RUN pip install -r requirements.txt
 
 CMD [ "python", "-u", "./app.py" ]
