@@ -1,6 +1,8 @@
 #build stage
 FROM golang:1.11 AS build-env
 
+LABEL maintainer="Jonathan Morais <jonathan.m.lucena@gmail.com>"
+
 WORKDIR /go/src/app/
 
 #install dependecies
