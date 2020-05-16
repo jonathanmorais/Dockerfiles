@@ -1,5 +1,5 @@
 #build stage
-FROM golang:1.11 AS build-env
+FROM golang:1.13 AS build-env
 
 LABEL maintainer="Jonathan Morais <jonathan.m.lucena@gmail.com>"
 
